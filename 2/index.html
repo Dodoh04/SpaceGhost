@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Conheça os personagens</title>
+		<meta name="description" content="Conheça os personagens" />
+		<meta name="keywords" content="flipping, circle, round, jquery plugin, circular, slideshow, 3d, css 3d transforms" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="../home/estilo.css">
+		<script src="js/modernizr.custom.js"></script>
+		<style>
+			.yellow a:hover{
+				opacity: 0.9;
+			}
+			.guava a:hover{
+				opacity: 0.9;
+			}
+			.ice a:hover{
+				opacity: 0.9;
+			}
+			.yellow a{
+				background-color: #f8f4f1;
+				color: #000;
+				border: #000 solid 1.5px;
+				border-radius: 8px;
+			}
+			.guava a{
+				background-color: #f8f4f1;
+				color: #000;
+				border: #000 solid 1.5px;
+				border-radius: 8px;
+			}
+			.ice a{
+				background-color: #f8f4f1;
+				color: #000;
+				border: #000 solid 1.5px;
+				border-radius: 8px;
+
+			}
+		</style>
+	</head>
+	<body>
+		<nav class="menu2">
+			<img src="../home/titulo.png" alt="space Ghost">
+			<ul>
+				<li class="yellow"><a href="../1/3DShadingWithBoxShadows/index.html">SPACE GHOST-CBS</a></li>
+				<li class="guava"><a href="../2/index.html">Personagens</a></li>
+				<li class="ice"><a href="../3/index.html">Quadrinhos</a></li>
+			</ul>
+		</nav>
+		<div class="container">	
+			<!-- Codrops top bar -->
+			<div class="codrops-top clearfix">
+				<a href="../home/index.html"><strong>&laquo; </strong></a>
+				<span class="right"><a href="http://cargocollective.com/isaac317"></a><a href="http://tympanus.net/codrops/?p=13951"><strong></strong></a></span>
+			</div><!--/ Codrops top bar -->
+			<header class="clearfix">
+				<h1>Conheça os personagens <span>Clique para ver os personagens</span></h1>	
+			</header>
+			<div class="main">
+				<div id="fc-slideshow" class="fc-slideshow">
+					<ul class="fc-slides">
+						<li><img src="images/1.jpg" /><h3>Space Ghost</h3></li>
+						<li><img src="images/2.jpg" /><h3>The C. King</h3></li>
+						<li><img src="images/3.jpg" /><h3>Glasstor</h3></li>
+						<li><img src="images/4.jpg" /><h3>Metallus</h3></li>
+						<li><img src="images/5.jpg" /><h3>Dr. Nightmare</h3></li>
+						<li><img src="images/6.jpg" /><h3>Jace</h3></li>
+						<li><img src="images/7.jpg" /><h3>Moltar</h3></li>
+						<li><img src="images/8.jpg" /><h3>Rough</h3></li>
+					</ul>
+				</div>
+			</div>
+		</div><!-- /container -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+		<script src="js/jquery.flipshow.js"></script>
+		<script>
+			$( function() {
+				
+				$( '#fc-slideshow' ).flipshow();
+
+			} );
+		</script>
+		 <footer>
+            <p>Douglas Medeiros de Oliveira</p>
+            <p>Guilherme Gomes de Souza</p>
+        </footer>
+	</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Hover and Click Trigger for Circular Elements with jQuery</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Hover and Click Trigger for Circular Elements with jQuery - jQuery plugin for hovering and clicking on circles" />
+        <meta name="keywords" content="jquery, hover, plugin, click, trigger, event, custom, area, web development, circle, circular shape, css3" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="../home/estilo.css">
+        <link href='http://fonts.googleapis.com/css?family=Kelly+Slab' rel='stylesheet' type='text/css' />
+		<noscript>
+			<link rel="stylesheet" type="text/css" href="css/noscript.css" />
+		</noscript>
+		<script type="text/javascript" src="js/modernizr.custom.72835.js"></script>
+        <style>
+            .yellow a:hover{
+                opacity: 0.9;
+            }
+            .guava a:hover{
+                opacity: 0.9;
+            }
+            .ice a:hover{
+                opacity: 0.9;
+            }
+            .yellow a{
+                background-color: #c18167;
+                color: #fff;
+                border: #000 solid 1.5px;
+				border-radius: 8px;
+            }
+            .guava a{
+                background-color: #c18167;
+                color: #fff;
+                border: #000 solid 1.5px;
+				border-radius: 8px;
+            }
+            .ice a{
+                background-color: #c18167;
+                color: #fff;
+                border: #000 solid 1.5px;
+				border-radius: 8px;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="menu2">
+            <img src="../home/titulo.png" alt="space Ghost">
+            <ul>
+                <li class="yellow"><a href="../1/3DShadingWithBoxShadows/index.html">SPACE GHOST-CBS</a></li>
+                <li class="guava"><a href="../2/index.html">Personagens</a></li>
+                <li class="ice"><a href="../3/index.html">Quadrinhos</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+           <div class="header">
+                <a href="../home/index.html"><strong>&laquo;</strong></a>
+                <div class="clr"></div>
+            </div>
+            <div class="wrapper">
+				<!-- If browser does not support border radius, show this message -->
+				<p class="message">Your browser does not support the border-radius property!</p>
+				<div class="section">
+					<div class="normal-trigger-area">
+						<a href="#" id="circle" class="ec-circle">
+							<h3>Ghost</h3>
+						</a>
+					</div>
+					<div class="content">
+						<h1>Quadrinhos<span><br>Sucesso da juventude</span></h1>
+						<p>A primeira versão aparição do personagem em histórias em quadrinhos foi na revista Hanna-Barbera Super TV Heroes da Gold Key, publicada no Brasil pela Editora Cruzeiro como Almanaque Super-Heróis da TV, e mais tarde pela Editora Abril. As histórias também foram publicadas na revista Golden Comics Digest, também da Gold Key. <br>
+
+Em 1978, o herói teve histórias publicadas na revista TV Stars, da Marvel Comics, e em 1987, ganhou um título próprio pela editora Comico.<br>
+
+Em 2004, a DC Comics publicou uma minissérie intitulada Space Ghost que apresentava a versão original do personagem em uma aventura de ficção científica que mostrava pela primeira vez a origem do herói. A série foi escrita por Joe Kelly e desenhada por Ariel Olivetti, com capas desenhadas por Alex Ross. É revelado nesta história que Space Ghost era, antes de ser um super-herói, um pacifista interplanetário chamado Thaddeus Bach (contrariando a série de humor Space Ghost de Costa a Costa, onde é dito que o nome real do personagem é Tad Ghostal)[1], que foi traido por oficias corruptos, que assassinaram sua esposa grávida e o abandonam em um planeta desolado. Bach foi então resgatado por um alienígena, que lhe deu uma razão para viver e a tecnologia contida em seu traje.<br><br>
+
+Em 2016, A DC Comics lançou Future Quest, um universo compartilhado dos heróis da Hanna-Barbera. A série é de Jeff Parker e Evan Shaner.<br>
+
+Títulos:<br>
+
+Space Ghost (Gold Key, 1967)<br>
+Hanna-Barbera Super TV Heroes (Gold Key, 1968)<br>
+Golden Comics Digest (Gold Key, 1969)<br>
+TV Stars (Marvel, 1978)<br>
+Space Ghost (Comico, 1987)<br>
+Cartoon Network Presents (DC, 1997)<br>
+Space Ghost (DC, 2005)<br>
+Future Quest (DC, 2016)<br>
+Scooby-Doo Team-Up (DC, 2016)<br>
+Green Lantern/Space Ghost Annual #1 (DC, 2017).</p>
+						
+					
+						<p><a href=""></a></p>
+					</div>
+				</div>
+            </div>
+        </div>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.circlemouse.js"></script>
+        <script type="text/javascript">
+            $(function() {
+				
+				$('#circle').circlemouse({
+					onMouseEnter	: function( el ) {
+					
+						el.addClass('ec-circle-hover');
+					
+					},
+					onMouseLeave	: function( el ) {
+						
+						el.removeClass('ec-circle-hover');
+						
+					},
+					onClick			: function( el ) {
+						
+						alert('clicked');
+						
+					}
+				});
+				
+			});
+        </script>
+         <footer>
+            <p>Douglas Medeiros de Oliveira</p>
+            <p>Guilherme Gomes de Souza</p>
+        </footer>
+    </body>
+</html>
